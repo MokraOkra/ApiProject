@@ -21,6 +21,7 @@ public class ReservationController : ControllerBase
         _context = context;
     }
     
+    
     [HttpGet]
     public Task<ActionResult<ReservationData>> GetReservationData([FromQuery] string doctorId)
     {
